@@ -2,10 +2,95 @@ body {
     background-color:rgba(0,125,0,0.2);
     /* opacity:0.6; */
 }
-img {
 
-    max-width:500px;
-    max-height:505px;
-    width: auto;
-    height: auto;
+main {
+    width: 90%;
+    background-color: rgb(80, 116, 235);
+    margin: auto;
+    padding: 1em;
+}
+#gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: auto 2rem;
+    margin-bottom: .25em;
+    float: right;
+    font-size: 10em;
+    /* outline: rgb(80, 116, 235); */
+}
+
+h2:hover {
+    letter-spacing: 0.2em;
+    transition-duration: 2s;
+}
+
+footer {
+    text-align: center;
+}
+
+@media all and (max-width: 640px) {
+    #gallery {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    h2 {
+        float: none;
+        font-size: 3em;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    h2 {
+        margin-bottom: 2em;
+    }
+    h2:hover {
+        letter-spacing: 0.05em;
+        transition-duration: 2s;
+    }
+}
+
+#gallery {
+    margin: 0 auto;
+}
+
+.imageContainer {
+    display: inline-block;
+    border: 2px solid white;
+    width: 45%;
+    padding: .3em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    object-fit: contain;
+}
+
+.imageContainer > a {
+    padding: 1em;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid red;
+    margin: 
+}
+
+
+.description {
+    text-align: justify;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    margin-top: 1em;
+    font-family: Arial, Helvetica, sans-serif;
 }
