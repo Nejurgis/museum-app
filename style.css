@@ -1,0 +1,51 @@
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background: white;
+}
+
+section {
+  border: 1px dotted black;
+  background: #eee;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.row {
+  display: flex;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+.row:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 50%;
+}
+.description {
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  .row {
+    flex-direction: column;
+  }
+  .row:nth-child(2n) {
+    flex-direction: column;
+  }
+  .image, .description {
+    width: 100%;
+  }
+}
