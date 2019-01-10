@@ -15,6 +15,13 @@ main {
     display: block;
 }
 
+#comments {
+    /* background-color: red; */
+}
+
+section .comment {
+    background-color: yellow;
+}
 .comments {
     border: 1px salmon solid;
     display: inline-block;
